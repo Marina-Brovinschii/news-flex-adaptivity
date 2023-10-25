@@ -77,14 +77,20 @@ body {
     .news .articles .right article:first-child p {
         padding-bottom: 4%;
     }
+    .news .articles .right article:last-child p {
+        padding-bottom: 5%;
+    }
+    .news .articles .right article:first-child img {
+        height: 12em;
+    }
     .news>.articles>article {
         order: -1;
     }
 }
 
 @media (max-width:800px) {
-    .news .articles {
-        flex-direction: column;
+    .news article {
+        flex-direction:column;
         width: 100%;
     }
     .news>.articles>article>.columns {
@@ -92,6 +98,6 @@ body {
         font-size: 110%;
     }
     .news .left, .right {
-        width: 100%;
+         width: 100%;
     }
 }
