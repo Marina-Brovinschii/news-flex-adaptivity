@@ -37,7 +37,7 @@ body {
     padding-bottom: 8%;
     position: relative;
 }
-.news>.articles>article>p {
+.news>.articles>article>.columns>p {
     font-size: 130%;
 }
 .news>.articles>article>h3 {
