@@ -1,0 +1,97 @@
+body {
+    font-family: 'tillanaregular';
+    background-color: beige;
+}
+.news {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.news header h1 {
+    font-family: 'tillanaextrabold';
+    font-size: 200%;
+}
+.news header h2 {
+    font-family: 'tillanabold';
+}
+.news header {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-bottom: 2%;
+}
+.news h3 {
+    font-family: 'tillanabold';
+}
+.news {
+    width: 80%;
+    margin: 0 auto;
+} 
+.news img {
+    width: 100%;
+}
+.news .articles {
+    display: flex;
+}
+.news article {
+    margin: 0 1%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 8%;
+    position: relative;
+}
+.news>.articles>article>p {
+    font-size: 130%;
+}
+.news>.articles>article>h3 {
+    font-size: 130%;
+}
+.news .articles .right article:first-child p {
+    padding-bottom: 15%;
+}
+.news article a {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    text-decoration: none;
+    background-color: rgb(255, 223, 174);
+    padding: 1%;
+}
+.news .left, .right {
+    width: 90%;
+}
+
+@media (max-width:1200px) {
+    .news {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .news .articles {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .news>.articles>article>.columns {
+        columns: 2;
+        font-size: 130%;
+    }
+    .news .left, .right {
+        width: 49%;
+    }
+    .news .articles .right article:first-child p {
+        padding-bottom: 4%;
+    }
+    .news>.articles>article {
+        order: -1;
+    }
+}
+
+@media (max-width:800px) {
+    .news .articles {
+        flex-direction: column;
+        width: 100%;
+    }
+    .news>.articles>article>.columns {
+        columns: 1;
+        font-size: 110%;
+    }
+    .news .left, .right {
+        width: 100%;
+    }
+}
